@@ -1,3 +1,6 @@
+
+
+
 function handleSubmit(event) {
     event.preventDefault()
 
@@ -12,5 +15,9 @@ function handleSubmit(event) {
         document.getElementById('results').innerHTML = res.message
     })
 }
+
+// show summary from NPL api
+// fetch('http://localhost:8080/summary')
+// .then(res => res.json())
 
 export { handleSubmit }
